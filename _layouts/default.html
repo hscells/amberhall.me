@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
 <head>
+    <style> body  {opacity:0;}</style>
+    <script>
+        window.onload = function() {setTimeout(function(){document.body.style.opacity="100";},10);};
+    </script>
+    <link rel="stylesheet" href="{{ "/assets/css/picnic.min.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/hover-min.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-
     {% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/hover-min.css?v=" | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/picnic.min.css?v=" | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
 
     <link rel="icon" href="{{ site.logo }}">
 
@@ -33,6 +35,7 @@
                 <a class="pseudo button" style="font-size: 0.7em" href="{{ page.url }}">{{ page.title }}</a>
                 {% endif %}
                 {% endfor %}
+                <a class="pseudo button" style="font-size: 0.7em" href="https://linkedin.com/in/amber-hall-867346161">LinkedIn</a>
             </div>
         </aside>
         <article class="full four-fifth-1000">

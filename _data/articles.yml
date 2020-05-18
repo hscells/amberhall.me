@@ -1,4 +1,10 @@
 categories:
+  - name: Travel
+    articles:
+      - 2020-travel-europe
+      - 2020-travel-hk
+
+
   - name: Music
     articles:
       - 2019-big-pineapple
@@ -12,7 +18,3 @@ categories:
       - 2018-mark-lee
       - 2018-good-charlotte
     
-  - name: Travel
-    articles:
-      - 2020-travel-hk
-      - 2020-travel-europe
