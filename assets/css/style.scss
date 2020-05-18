@@ -1,0 +1,91 @@
+---
+---
+.twitter-timeline {
+  width: 100% !important;
+  height: 100% !important;
+  border: 1px solid #e5e5e5 !important;
+}
+
+a {
+  color: #000;
+}
+
+* {
+  font-family: Verdana, serif;
+}
+
+.jumbo > * {
+  text-align: left;
+  font-size: 0.8em;
+  padding: 0 0 5px;
+}
+
+.jumbo > h1 {
+  font-size: 1em;
+}
+
+.category-name {
+  text-align: center;
+}
+
+#main {
+  max-width: 960px;
+  margin: 64px;
+}
+
+#menu-toggle-label {
+  display: none;
+}
+
+.card {
+  min-height: 188px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  #main {
+    margin: -12px;
+    padding: 32px;
+  }
+
+  aside > * {
+    display: inline;
+    vertical-align: top;
+  }
+
+  #menu-toggle-label {
+    display: block;
+    float: right;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  #menu-toggle:checked + #menu {
+    max-height: 500px;
+  }
+
+  #menu {
+    overflow: hidden;
+    max-height: 0;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #eeeeee;
+  }
+
+  .card {
+    width: 100%;
+    min-height: 136px !important;
+  }
+}
+
+.hvr-fade:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.hvr-fade:hover a {
+  color: #fff;
+}
+

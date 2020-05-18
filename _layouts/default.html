@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+    {% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/hover-min.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/picnic.min.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+
+    <link rel="icon" href="{{ site.logo }}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<main>
+    <section id="main" class="flex one five-1000">
+        <aside class="full fifth-1000">
+            {% if site.logo %}
+            <div style="text-align: center">
+            <a href="{{ "/" | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="Logo" style="width: 96px;padding-bottom: 32px"/></a>
+            </div>
+            {% endif %}
+            <label for="menu-toggle" id="menu-toggle-label" class="button" style="background-color: #000">&#8801;</label>
+            <input type="checkbox" id="menu-toggle">
+            <div class="flex one" id="menu">
+                {% assign sorted_pages = site.pages | sort:"order" %}
+                {% for page in sorted_pages %}
+                {% if page.title %}
+                <a class="pseudo button" style="font-size: 0.7em" href="{{ page.url }}">{{ page.title }}</a>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </aside>
+        <article class="full four-fifth-1000">
+            {{ content }}
+        </article>
+    </section>
+</main>
+</body>
+</html>

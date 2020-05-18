@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<header class="jumbo">
+    <h1>{{ site.title }}</h1>
+    <div><em>{{ site.description }}</em></div>
+</header>
+
+<div class="flex one">
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus maximus nisi, a imperdiet nisi pharetra vel. Vestibulum bibendum nisi ante, id tristique metus sollicitudin vitae.
+    </div>
+</div>
+
+
+{% for category in site.data.articles.categories %}
+<h3>{{ category.name }}</h3>
+<div class="flex three-1000 two-800 one-500">
+    {% for articleid in category.articles %}
+    {%- assign reference = "/articles/" | append: articleid -%}
+    {%- for article in site.articles -%}
+    {%- if article.id == reference -%}
+    <a href="{{ article.source }}" style="cursor:pointer;">
+        <div>
+            <article class="card hvr-fade hvr-grow-shadow">
+                {%- assign client = site.clients | where: "id", client_id -%}
+                <header>
+                    {{ article.title }}
+                </header>
+                <footer>
+                    <div>{{ article.year }}</div>
+                    <div>{{ article.client }}</div>
+                </footer>
+            </article>
+        </div>
+    </a>
+    {%- endif -%}
+    {%- endfor -%}
+    {% endfor %}
+</div>
+{% endfor %}
