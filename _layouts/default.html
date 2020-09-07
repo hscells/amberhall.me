@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en-AU">
 <head>
-    <style> body  {opacity:0;}</style>
+    <style>
+        body {
+            opacity: 0;
+        }
+    </style>
     <script>
-        window.onload = function() {setTimeout(function(){document.body.style.opacity="100";},10);};
+        window.onload = function () {
+            setTimeout(function () {
+                document.body.style.opacity = "100";
+            }, 10);
+        };
     </script>
     <link rel="stylesheet" href="{{ "/assets/css/picnic.min.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ "/assets/css/hover-min.css?v=" | append: site.github.build_revision | relative_url }}">
@@ -23,7 +31,7 @@
         <aside class="full fifth-1000">
             {% if site.logo %}
             <div style="text-align: center">
-            <a href="{{ "/" | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="Logo" style="width: 96px;padding-bottom: 32px"/></a>
+                <a href="{{ "/" | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="Logo" style="width: 96px;padding-bottom: 32px"/></a>
             </div>
             {% endif %}
             <label for="menu-toggle" id="menu-toggle-label" class="button" style="background-color: #000">&#8801;</label>
@@ -35,7 +43,14 @@
                 <a class="pseudo button" style="font-size: 0.7em" href="{{ page.url }}">{{ page.title }}</a>
                 {% endif %}
                 {% endfor %}
-                <a class="pseudo button" style="font-size: 0.7em" href="https://linkedin.com/in/amber-hall-867346161">LinkedIn</a>
+                <!-- Begin: HubSpot Academy - Inbound Marketing Badge -->
+                <div class='academy-badge'>
+                    <a href='http://academy.hubspot.com/certification' title='Inbound Marketing'>
+                        <img src='https://hubspot-academy.s3.amazonaws.com/prod/tracks/user-badges/6690f948d5b44d5f97eed425b223d5fe-1593133742139.png' width="90%"/>
+                    </a>
+                </div>
+                <!-- End: HubSpot Academy - Inbound Marketing Badge -->
+                <!-- <a class="pseudo button" style="font-size: 0.7em" href="https://linkedin.com/in/amber-hall-867346161">LinkedIn</a> -->
             </div>
         </aside>
         <article class="full four-fifth-1000">
