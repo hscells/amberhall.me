@@ -1,10 +1,21 @@
 categories:
+  - name: Sustainability
+    articles:
+      - 2021-environmental-resolutions
+      - 2020-green-routine
+      - 2020-activewear-chemicals
+      - 2020-minimise-waste
+      - 2020-old-clothes
+      - 2020-fast-fashion
+      - 2020-caring-clothes
+      - 2020-sustainable-activewear
+    
+    
   - name: Travel
     articles:
       - 2020-uber-rewards
       - 2020-travel-europe
       - 2020-travel-hk
-      - 2018-third-culture-kid
 
 
   - name: Entertainment
