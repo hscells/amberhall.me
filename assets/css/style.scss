@@ -96,25 +96,15 @@ a {
     width: 100%;
     min-height: 136px !important;
   }
-
-  .hvr-fade:hover {
-    background-color: #000;
-    color: #000;
-    z-index: 1000;
-  }
-
-  .hvr-fade:hover a {
-    color: #000;
-  }
 }
 
-.hvr-fade:hover {
+.hvr-fade:hover, .hvr-fade:active, .hvr-fade:focus {
   background-color: #000;
   color: #000;
   z-index: 1000;
 }
 
-.hvr-fade:hover a {
+.hvr-fade:hover a, .hvr-fade:active a, .hvr-fade:focus a {
   color: #000;
 }
 
