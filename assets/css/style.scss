@@ -1,5 +1,22 @@
 ---
 ---
+@font-face {
+  font-family: ahme;
+  src: url(/assets/DMSans-Regular.ttf);
+}
+
+body, article {
+ background-color: #eed6d7 !important;
+}
+
+.card {
+ border: 1px solid #000;
+}
+
+.card > header { 
+ border-bottom: 1px solid #000;
+}
+
 .twitter-timeline {
   width: 100% !important;
   height: 100% !important;
@@ -11,17 +28,17 @@ a {
 }
 
 * {
-  font-family: Verdana, serif;
+  font-family: ahme, Verdana, serif;
 }
 
 .jumbo > * {
-  text-align: left;
+  text-align: center;
   font-size: 0.8em;
   padding: 0 0 5px;
 }
 
 .jumbo > h1 {
-  font-size: 1em;
+  font-size: 3em;
 }
 
 .category-name {
@@ -30,7 +47,8 @@ a {
 
 #main {
   max-width: 960px;
-  margin: 64px;
+  margin: auto;
+  margin-top: 64px;
 }
 
 #menu-toggle-label {
@@ -82,10 +100,11 @@ a {
 
 .hvr-fade:hover {
   background-color: #000;
-  color: #fff;
+  color: #000;
+  z-index: 1000;
 }
 
 .hvr-fade:hover a {
-  color: #fff;
+  color: #000;
 }
 

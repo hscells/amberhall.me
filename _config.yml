@@ -1,15 +1,15 @@
 # Shown in the browser and home page.
 title: Amber Hall
 description: Content Writer
-logo: /images/ah1.png
+#logo: /images/ah1.png
 
 # Used to configure various links on the site.
 repository: amberhall.me
 
 # Configure third-party libraries.
-plugins:
-  - jekyll-feed # RSS feeds.
-  - jekyll-redirect-from # "hot-link" pages.
+#plugins:
+#  - jekyll-feed # RSS feeds.
+#  - jekyll-redirect-from # "hot-link" pages.
 
 # Configure non-standard collections.
 collections:
