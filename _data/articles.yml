@@ -1,16 +1,6 @@
 categories:
-  - name: Sustainability
-    articles:
-      - 2021-environmental-resolutions
-      - 2020-green-routine
-      - 2020-activewear-chemicals
-      - 2020-minimise-waste
-      - 2020-old-clothes
-      - 2020-fast-fashion
-      - 2020-caring-clothes
-      - 2020-sustainable-activewear
-    
-    
+
+
   - name: Travel
     articles:
       - 2020-uber-rewards
@@ -32,4 +22,15 @@ categories:
       - 2018-good-charlotte
       - 2018-set-mo
       - 2018-the-bottlers
-    
+
+
+  - name: Sustainability
+    articles:
+      - 2021-environmental-resolutions
+      - 2020-green-routine
+      - 2020-activewear-chemicals
+      - 2020-minimise-waste
+      - 2020-old-clothes
+      - 2020-fast-fashion
+      - 2020-caring-clothes
+      - 2020-sustainable-activewear
